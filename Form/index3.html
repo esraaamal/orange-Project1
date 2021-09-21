@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise #3.Registraion Form</title>
+  </head>
+  <style>
+    body,
+    html {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: table;
+    }
+    body {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .center1 {
+      text-align: center;
+    }
+    .inputF {
+      width: 97px;
+      display: inline-block;
+      text-align: right;
+    }
+    form {
+      display: table; /* shrinks to fit content */
+      margin: auto;
+      width: 30%;
+    }
+
+    fieldset {
+      background: #ffffdc;
+      padding: 3%;
+    }
+    h3 {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+    }
+    .submit {
+      display: table; /* shrinks to fit content */
+      margin: auto;
+    }
+  </style>
+  <body>
+    <h3>Registration Form</h3>
+    <div>
+      <form>
+        <fieldset style="border: 3px solid gray">
+          <legend>Personal details</legend>
+          <div class="center1">
+            <label class="inputF" for="Firstname">First name</label
+            ><input name="Firstname" style="margin: 5px" /><br /><br />
+            <label class="inputF" for="Lastname">Last name </label
+            ><input name="Lastname" style="margin: 5px" /><br /><br />
+            <label class="inputF" for="Email">Email address </label
+            ><input name="Email" style="margin: 5px" /><br /><br />
+
+            <label for="Gender">Gender </label>
+            <input type="radio" id="Male" name="Male" value="Male" />
+            <label for="Male"> Male</label>
+            <input
+              type="radio"
+              id="Female"
+              name="Femal"
+              value="Female"
+              checked
+            />
+            <label for="Female"> Female</label><br /><br />
+          </div>
+        </fieldset>
+      </form>
+
+      <form>
+        <fieldset style="border: 3px solid gray">
+          <legend>City</legend>
+          <div class="center1">
+            <label for="cars">City:</label>
+            <select name="city" id="city">
+              <option value="Amman">Amman</option>
+              <option value="Ajloun">Ajoun</option>
+              <option value="Irbd">Irbd</option>
+              <option value="Al-zarqa">Al-Zarqa</option>
+            </select>
+          </div>
+        </fieldset>
+      </form>
+      <br />
+      <button class="submit" type="submit">Subscribe</button>
+    </div>
+  </body>
+</html>
